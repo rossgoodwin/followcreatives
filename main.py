@@ -1,5 +1,5 @@
-import tweepy
 from time import sleep
+import tweepy
 import followcreatives
 
 name1 = raw_input("twitter user >> ")
