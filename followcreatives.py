@@ -18,7 +18,7 @@ words = ['write', 'writer', 'writing', 'author', 'photographer', 'photographs' '
          'gallery', 'painting', 'illustration']
 
 
-main(nm):
+def main(nm):
     """Follows creatives from list of friends of inputted name"""
     for i in tweepy.Cursor(api.friends, id=nm).items():
         des = i._json['description']
