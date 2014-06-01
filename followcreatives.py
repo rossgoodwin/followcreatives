@@ -1,11 +1,11 @@
 import tweepy
-from fc_auth import *
+import fc_auth
 
 
-CONSUMER_KEY = c_k
-CONSUMER_SECRET = c_s
-ACCESS_KEY = a_k
-ACCESS_SECRET = a_s
+CONSUMER_KEY = fc_auth.c_k
+CONSUMER_SECRET = fc_auth.c_s
+ACCESS_KEY = fc_auth.a_k
+ACCESS_SECRET = fc_auth.a_s
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 api = tweepy.API(auth)

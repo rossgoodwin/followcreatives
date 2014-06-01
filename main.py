@@ -1,7 +1,6 @@
 import tweepy
 from time import sleep
-from fc_auth import *
-from followcreatives import *
+import followcreatives
 
 name1 = raw_input("twitter user >> ")
 name2 = raw_input("twitter user >> ")
@@ -12,7 +11,7 @@ names = [name1, name2, name3, name4]
 
 for i in names:
     try:
-        main(i)
+        followcreatives.main(i)
     except tweepy.TweepError:
         print "Waiting for reset...(15 min)"
         sleep(905)
