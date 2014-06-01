@@ -1,6 +1,7 @@
 import tweepy
 from fc_auth import *
 
+
 CONSUMER_KEY = c_k
 CONSUMER_SECRET = c_s
 ACCESS_KEY = a_k
@@ -9,7 +10,7 @@ auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 api = tweepy.API(auth)
 
-name = raw_input("twitter user >> ")
+
 words = ['write', 'writer', 'writing', 'author', 'photographer', 'photographs' 'photograph', 'camera', 'art', 
          'music', 'musician', 'paint', 'painter', 'literary', 'literature', 'lit', 'book', 'books', 'fiction',
          'artist', 'story', 'stories', 'magazine', 'review', 'illustrator', 'documentary', 'film', 'filmmaker',
@@ -17,7 +18,8 @@ words = ['write', 'writer', 'writing', 'author', 'photographer', 'photographs' '
          'gallery', 'painting', 'illustration']
 
 
-main():
+main(name):
+    """Follows creatives from list of friends of inputted name"""
     for i in tweepy.Cursor(api.friends, id=name).items():
         des = i._json['description']
         creative = False
@@ -31,8 +33,3 @@ main():
             i.follow()
         else:
             continue
-
-
-if __name__ == '__main__':
-    main()
-    
