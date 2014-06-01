@@ -12,6 +12,6 @@ names = [name1, name2, name3, name4]
 for i in names:
     try:
         followcreatives.main(i)
-    except tweepy.TweepError:
+    except tweepy.error.TweepError:
         print "Waiting for reset...(15 min)"
         sleep(905)
