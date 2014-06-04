@@ -15,7 +15,7 @@ words = ['write', 'writer', 'writing', 'author', 'photographer', 'photographs' '
          'music', 'musician', 'paint', 'painter', 'literary', 'literature', 'lit', 'book', 'books', 'fiction',
          'artist', 'story', 'stories', 'magazine', 'review', 'illustrator', 'documentary', 'film', 'filmmaker',
          'journal', 'create', 'creative', 'creator', 'creativity', 'design', 'designer', 'photo', 'arts',
-         'gallery', 'painting', 'illustration']
+         'gallery', 'painting', 'illustration', 'poem', 'poetry']
 
 
 def main(nm):
