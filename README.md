@@ -9,7 +9,7 @@ To run FollowCreatives, enter the following in the terminal from the directory c
 
     $ python main.py
 
-You will then be prompted to enter your Twitter screenname followed by four other Twitter screennames. Creative individuals from each entered screennames' Twitter friends will be followed, with 15 minute breaks to account for API rate limiting.
+You will then be prompted to enter your Twitter screenname followed by four other Twitter screennames. Creative individuals from entered screennames' Twitter friends will be followed, with 15 minute breaks to account for API rate limiting.
 
 
 
