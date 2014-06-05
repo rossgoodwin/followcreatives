@@ -18,7 +18,7 @@ words = ['write', 'writer', 'writing', 'author', 'photographer', 'photographs' '
          'gallery', 'painting', 'illustration', 'poem', 'poetry']
 
 
-def main(nm):
+def main(yn, nm):
     """Follows creatives from list of friends of inputted name"""
     for i in tweepy.Cursor(api.friends, id=nm).items():
         des = i._json['description']
@@ -29,13 +29,14 @@ def main(nm):
                 break
             else:
                 continue
-        if creative and i._json['screen_name'] != 'Manifestists':
+        if creative and i._json['screen_name'] != yn:
             i.follow()
         else:
             continue
         
 
 if __name__ == '__main__':
+    yourname = raw_input("your twitter screenname >> ")
     name1 = raw_input("twitter user >> ")
-    main(name1)
+    main(yourname, name1)
     
