@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="FollowCreatives : Follows other creative folks on Twitter" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>FollowCreatives</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/rossgoodwin/followcreatives">View on GitHub</a>
+
+          <h1 id="project_title">FollowCreatives</h1>
+          <h2 id="project_tagline">Follows other creative folks on Twitter</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/rossgoodwin/followcreatives/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/rossgoodwin/followcreatives/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>FollowCreatives is a simple script written by <a href="http://rossgoodwin.com">Ross Goodwin</a> in Python 2.7 that follows other creative folks on Twitter. Tweepy is required. </p>
+
+<p>You must create a new Twitter application at <a href="http://dev.twitter.com">dev.twitter.com</a> to generate the necessary API keys and access tokens. Once acquired, place the API keys and access tokens into a new file named "fc_auth.py" in the same directory as followcreatives.py, using the variable names c_k, c_s, a_k, and a_s.</p>
+
+<p>To run FollowCreatives, enter the following in the terminal from the directory containing the python files:</p>
+
+<pre><code>$ python main.py
+</code></pre>
+
+<p>You will then be prompted to enter your Twitter screenname followed by four other Twitter screennames. Creative individuals from entered screennames' Twitter friends will be followed, with 15 minute breaks to account for API rate limiting.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">FollowCreatives maintained by <a href="https://github.com/rossgoodwin">rossgoodwin</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
