@@ -1,2 +1,7 @@
 *.pyc
 fc_auth.py
+uf_auth.py
+we_auth.py
+do_auth.py
+sd_auth.py
+cycle.py

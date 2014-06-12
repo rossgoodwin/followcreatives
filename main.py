@@ -6,9 +6,10 @@ yourname = raw_input("your twitter screenname >> ")
 name1 = raw_input("twitter user >> ")
 name2 = raw_input("twitter user >> ")
 name3 = raw_input("twitter user >> ")
-name4 = raw_input("twitter_user >> ")
+name4 = raw_input("twitter user >> ")
+name5 = raw_input("twitter user >> ")
 
-names = [name1, name2, name3, name4]
+names = [name1, name2, name3, name4, name5]
 
 for i in names:
     try:
